@@ -12,6 +12,11 @@ public class Main {
 		contaVitor.numero = 001; 
 		
 		System.out.println(contaVitor.agencia);
+		System.out.println(contaVitor.saldo);
+		
+		contaVitor.deposito(1000);
+		
+		System.out.println("Seu saldo é de " + contaVitor.saldo);
 	}
 
 }
