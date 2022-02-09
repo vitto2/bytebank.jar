@@ -21,24 +21,11 @@ public class Main {
 		
 		contaIolanda.deposito(3500.00);
 		
+		System.out.println("Vitor - " + contaVitor.showSale() + " / " + "Iolanda - " +  contaIolanda.showSale());
 		
-		System.out.println(contaVitor.showSale());
+		contaIolanda.transfer(500, contaVitor); 
 		
-		System.out.println(contaIolanda.showSale());
-		
-		
-		contaIolanda.transfer(500, contaVitor);
-		
-		System.out.println(contaVitor.showSale());
-		
-		contaVitor.transfer(1000, contaIolanda);
-		
-		System.out.println(contaIolanda.showSale());
-		System.out.println(contaVitor.showSale());
-		
-		contaVitor.transfer(2010, contaIolanda);
-		System.out.println(contaVitor.showSale());
-		
+
 	}
 
 }

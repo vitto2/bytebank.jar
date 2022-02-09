@@ -32,5 +32,7 @@ public class Conta {
 	
 		withDraw(value);
 		destino.deposito(value);
+		
+		System.out.println("Olá, " + titular + "! Sua transferencia feita com sucesso. Seu novo saldo é de " + showSale());
 	}
 }
