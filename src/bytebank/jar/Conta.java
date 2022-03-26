@@ -5,15 +5,24 @@ public class Conta {
 	private double sale;
 	int agencia;
 	int numero;
-	Cliente titular;
+	private Cliente titular;
 
+	
+	public void setTitular(Cliente titular) {
+		this.titular = titular;
+	}
+	
+	public Cliente getTitular() {
+		return titular;
+	}
+	
 	void deposito(double value) {
 
 		sale += value;
 		System.out.println("Deposito no valor de R$" + value + " foi feito com sucesso." + "Seu saldo atual é de R$ "
 				+ getSaldo());
 	}
-
+	
 	double getSaldo() {
 
 		return sale;
@@ -37,4 +46,6 @@ public class Conta {
 		System.out.println(
 				"Olá, " + titular.nome + "! Sua transferencia feita com sucesso. Seu novo saldo é de " + getSaldo());
 	}
+
+	
 }

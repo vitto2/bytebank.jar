@@ -10,7 +10,7 @@ public class Main {
 		vitor.profissao = "Programador";
 
 		Conta contaVitor = new Conta();
-		contaVitor.titular = vitor;
+		contaVitor.setTitular(vitor);
 		contaVitor.agencia = 241230;
 		contaVitor.numero = 001;
 
@@ -20,21 +20,14 @@ public class Main {
 		iolanda.profissao = "Engenheira de Software";
 
 		Conta contaIolanda = new Conta();
-		contaIolanda.titular = iolanda;
+		contaIolanda.setTitular(iolanda);
 		contaIolanda.agencia = 422312;
 		contaIolanda.numero = 002;
+		
+		System.out.println(contaVitor.getTitular().nome);
 
-		Conta contaPedro = new Conta();
-
-		contaPedro.titular = new Cliente();
-
-		contaPedro.titular.nome = "Pedro Silva da Silva";
-
-		contaVitor.deposito(2500.00);
-
-		contaIolanda.deposito(3500.00);
-
-		System.out.println(contaPedro.titular.nome);
+		
+		 
 
 	}
 
