@@ -16,6 +16,7 @@ public class Conta {
 		return titular;
 	}
 	
+	
 	void deposito(double value) {
 
 		sale += value;
@@ -28,6 +29,7 @@ public class Conta {
 		return sale;
 	}
 
+	//Sacar
 	void withDraw(double value) {
 
 		if (value <= sale) {
@@ -44,8 +46,20 @@ public class Conta {
 		destino.deposito(value);
 
 		System.out.println(
-				"Olá, " + titular.nome + "! Sua transferencia feita com sucesso. Seu novo saldo é de " + getSaldo());
+				"Olá, " + titular.getNome() + "! Sua transferencia feita com sucesso. Seu novo saldo é de " + getSaldo());
 	}
 
-	
+	//O cliente possui saldo disponível para empréstimo de 40% do saldo atual dele. 
+	void verificaEmprestimoDisponivel() { 
+		
+		double saldo = getSaldo(); 
+		
+		if(saldo>3000 && saldo <40000) { 
+			System.out.println("Você possui "  + saldo * 0.4 + "disponível para empréstimo!");
+		} else { 
+			System.out.println("Você não possui saldo disponível para empréstimo. Continue usando sua conta e tente novamente. ");
+		}
+		
+		
+	}
 }
