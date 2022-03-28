@@ -6,27 +6,14 @@ public class Main {
 
 		Cliente vitor = new Cliente();
 				vitor.setNome("Vitor Silva de Souza");
-		Conta contaVitor = new Conta();	
+		Conta contaVitor = new Conta(13, 52328);	
 		contaVitor.setTitular(vitor); //
 					
 
+		
+		System.out.println(contaVitor.getAgencia());
 						
 						
-		 
-		System.out.println(contaVitor.getTitular().getNome()); 
-		
-		contaVitor.deposito(1800.00);
-		
-		System.out.println("Seu saldo é " + contaVitor.getSaldo());;
-		
-		contaVitor.verificaEmprestimoDisponivel();
-		
-		contaVitor.deposito(2000);
-			
-	
-		contaVitor.verificaEmprestimoDisponivel();
-
-		contaVitor.contratoEmprestimo(400);
 		
 	}
 

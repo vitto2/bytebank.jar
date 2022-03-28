@@ -7,6 +7,22 @@ public class Conta {
 	int numero;
 	private Cliente titular;
 
+	
+	
+	public int getAgencia() { 
+		
+		return this.agencia; 
+	}
+	
+	public int getNumero() { 
+		
+		return this.numero; 
+	}
+	public Conta(int agencia, int numero) { 
+		this.agencia = agencia; 
+		this.numero = numero; 
+		
+	}
 	public void setTitular(Cliente titular) {
 		this.titular = titular;
 	}
